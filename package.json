@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "prepare": "run-s build",
-    "build": "run-s build:rollup build:css-docs build:i18n-docs build:types build:typedoc build:toc",
+    "build": "run-s build:rollup build:types",
     "build:rollup": "cross-env NODE_ENV=production rollup -c",
     "build:css-docs": "node ./bin/generateCssDocs",
     "build:i18n-docs": "node ./bin/generateI18nDocs",
